@@ -1,13 +1,18 @@
 #SlideImage {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     object-fit: cover;
+    opacity: 0.85;
 }
 /* #SlideImage {
     height: 500px;
     width: 100%;
     object-fit: cover;
-    opacity: 0.85;   /* 0.1 se 1 tak */
+    opacity: 0.85;  
+ } */
+
+ 
+ /* 0.1 se 1 tak
 .transparent-navbar {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
@@ -17,13 +22,43 @@
     z-index: 1000;
 }
 
-/* Text color */
 .transparent-navbar .nav-link,
 .transparent-navbar .navbar-brand {
-    color: #fff;
+    color: #000 !important;
 }
 
-/* Hover effect */
-.transparent-navbar .nav-link:hover {
-    color: #f8f9fa;
-} 
+/* Hover effect: Bootstrap primary blue */
+.transparent-navbar .nav-link:hover,
+.transparent-navbar .navbar-brand:hover {
+    color: #0d6efd !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+    color: black !important
+}
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+    color: #0d6efd !important;
+}
+
+
+.dropdown-menu {
+    background-color: white;
+}
+
+
+.navbar-light .navbar-toggler {
+    border-color: black;
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+
+}
+.home{
+    background: url("static/photos/Hospital.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    background-position: center;
+}

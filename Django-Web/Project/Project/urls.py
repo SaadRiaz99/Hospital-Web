@@ -18,6 +18,11 @@ from django.contrib import admin
 from django.urls import path , include
 from django.conf import settings
 from django.conf.urls.static import static
+# custom add for name change
+admin.site.site_header = "Hospital-Web" # Text for the <h1> (and above login form)
+admin.site.site_title = "Hospital-Web-Admin Site"     # Text for the browser tab title
+admin.site.index_title = "Welcome to My Admin of Hospital-Web" # Text for the admin index page heading
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

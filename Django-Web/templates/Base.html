@@ -10,9 +10,11 @@
     <title>{% block title %}Patient{% endblock %}</title>
 </head>
 <body>
+  <div class="container-navbar">
  <nav class="navbar navbar-expand-lg navbar-light transparent-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Hospital-Web</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Hospital-Web</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,13 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Feature.html">Features</a>
+          <a class="nav-link" href="{% url 'feature' %}">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="{% url 'form' %}">Form</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
@@ -41,6 +43,7 @@
     </div>
   </div>
 </nav>
+</div>
 {% block body %}
 
 {% endblock %}
