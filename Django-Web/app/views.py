@@ -14,3 +14,9 @@ def Feature(request):
 
 def Services(request):
     return render(request, 'Services.html')
+
+def Doctor_Detail(request):
+    return render(request, 'Doctor_Detail.html')
+
+def Patient(request):
+    return render(request, 'Patient.html')

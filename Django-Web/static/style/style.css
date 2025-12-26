@@ -62,3 +62,43 @@
     min-height: 100vh;
     background-position: center;
 }
+.doctor-card img {
+    height: 220px;          
+    object-fit: cover;     
+  }
+
+.doctor-card .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.doctor-card .btn {
+    margin-top: auto;      
+  }
+.card-img-top {
+    height: 220px;        
+    object-fit: cover;  
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+  }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+.card-body .btn {
+    margin-top: auto;    
+  }
+
+.card-text {
+    min-height: 72px;    
+  }
+.card-img-top {
+  height: 220px;      
+  object-fit: cover; 
+  width: 100%;
+}  
