@@ -28,15 +28,16 @@
           <a class="nav-link" href="{% url 'feature' %}">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'form' %}">Form</a>
+          <a class="nav-link" href="{% url 'doctor_Detail' %}">Doctor</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
             Services
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{% url 'doctor_Detail' %}">Doctor</a></li>
+            <li><a class="dropdown-item" href="{% url 'form' %}">Sigup/Login</a></li>
             <li><a class="dropdown-item" href="{% url 'patient' %}">Patient</a></li>
+            <li><a class="dropdown-item" href="{% url 'Apointment'%}}">Appointment</a></li>
           </ul>
         </li>
       </ul>

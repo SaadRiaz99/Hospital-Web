@@ -37,3 +37,6 @@ def Doctor_Detail(request):
 
 def Patient(request):
     return render(request, 'Patient.html')
+
+def Appointment(request):
+    return render(request, 'Apointment.html')
